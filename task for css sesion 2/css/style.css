@@ -1,0 +1,38 @@
+body{
+    background-color: teal;
+}
+
+.info-Div{
+    background-color: aliceblue;
+    padding: 2% 2% 3%;
+    width: 40%;
+    margin:auto; 
+    display: inline-block;
+    border:solid 20px;
+}
+.info-Div h1 ,.contact{
+    padding-left: 30%;
+    font-size:50px;
+font-weight: bolder;
+}
+.input-style{
+    margin-top: 2%;
+    border-radius: 20px;
+    margin-left: 25%;
+    padding: 3% 8% 3% 8%;
+}
+.button-style{
+    padding: 2% 16% 2% 16%;
+    margin-top: 10%;
+    margin-left: 27%;
+    color: rgb(0, 0, 0);
+    border: none;
+
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+    
+}
