@@ -1,0 +1,92 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.d-flex {
+  display: flex;
+  
+}
+.flex-dec{flex-direction: column;}
+
+.justfy-content-spaceb {
+  justify-content: space-between;
+}
+.align-items {
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.text-algin {
+  text-align: center;
+}
+ a{
+    color: black;
+ }
+ .name{
+    gap: 30px;
+ }
+.holder{width: 30%;
+border-radius: 15px;
+overflow: hidden; 
+  transition: transform 0.8s ease-in-out, width 0.8s ease-in-out;} 
+.left a{
+    /* background-color: black;  */
+    gap: 20px;
+    color: white;
+}
+.left{background-color: black;
+    width: 25%;
+ transition: background-color 0.8s ease-in-out, width 0.8s ease-in-out
+}
+
+.holder img{
+    display: block;
+    overflow: hidden;
+}
+.w-100{width: 100%;}
+.right{
+    padding: 5%;
+overflow: hidden;
+gap: 30px;
+
+}
+.hr-relatev{
+    border: 0;
+    height: 2px;
+    
+    background-color: rgb(0, 42, 255);
+    width: 30%;
+    margin:  0;
+
+}
+.but{
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.holder:hover img {
+    scale:1.05 ;
+    width: 100;
+
+ transition: 0.8s ease-in-out, width 0.8s ease-in-out}
+.holder:hover .hr-relatev{
+    width: 100%;
+     transition: 0.8s ease-in-out, width 0.8s ease-in-out
+}
+.holder:hover .left{
+    background-color: blue;
+ transition: background-color 0.8s ease-in-out, width 0.8s ease-in-out
+
+}
+
