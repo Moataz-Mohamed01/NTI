@@ -150,7 +150,12 @@ span {
   align-self: flex-end;
   align-content: flex-end;
 }
-
+.card-holder-2:hover{background-color: #f6c90055;
+transform: scale(1.1);
+}
+.card-holder-1:hover{
+  background-color: #e2bc0e;
+}
 .location {
   background-color: #e2bc0e;
   width: 30%;
