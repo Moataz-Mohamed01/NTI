@@ -1,0 +1,478 @@
+/* Mobile Styles for iPhone 14/13 (390px width) and similar devices */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  /* Header Mobile Navigation */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .ul-style {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .ul-style.show {
+    display: block;
+  }
+
+  .ul-style ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  /* Landing Section Mobile */
+  .landing {
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../assets/img/a5fcbde5258262f42e8d47435151dd5e6c7fc8ba.png");
+  }
+
+  .head {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+
+  .head-1 {
+    font-size: 24px !important;
+  }
+
+  .f-size {
+    font-size: 16px !important;
+  }
+
+  .f-s {
+    font-size: 22px !important;
+  }
+
+  .info {
+    width: 100% !important;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+
+  .w-30 {
+    width: 100% !important;
+  }
+
+  /* Shop Section Mobile */
+  .holder-1 {
+    flex-direction: column !important;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .relative input {
+    min-width: 280px;
+    padding: 15px 40px 15px 15px;
+  }
+
+  .center {
+    gap: 10px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+  }
+
+  .cat {
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: max-content;
+  }
+
+  .card-1 {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-1 img {
+    width: 100% !important;
+    max-width: 280px;
+  }
+
+  /* Services Mobile */
+  .services .w-90.d-flex.justify-c-s.align-c {
+    flex-direction: column !important;
+  }
+
+  .img {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .img-box {
+    width: calc(50% - 7.5px) !important;
+    height: 180px !important;
+  }
+
+  .img-2 {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+
+  .img-2 img {
+    height: 300px !important;
+  }
+
+  /* About Us Mobile */
+  .about-us .w-90.d-flex.justify-c-s.align-c {
+    flex-direction: column !important;
+  }
+
+  .text.w-50 {
+    width: 100% !important;
+    order: 2;
+  }
+
+  .cat-img.w-50 {
+    width: 100% !important;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .mask-1 {
+    position: static !important;
+    width: 80% !important;
+    margin: 20px auto !important;
+    display: block;
+    right: auto !important;
+    top: auto !important;
+  }
+
+  /* Team Section Mobile */
+  .w-90.align-c.d-flex.justify-c-s {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .card-team {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .card-team img {
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Blog Mobile */
+  .blog .d-flex.justify-c-s {
+    flex-direction: column !important;
+  }
+
+  .right-info.w-50 {
+    width: 100% !important;
+    order: 2;
+  }
+
+  .left-img.w-50 {
+    width: 100% !important;
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .dog {
+    height: 250px !important;
+  }
+
+  .left-img i {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 40px !important;
+    left: calc(50% - 40px) !important;
+    top: calc(50% - 40px) !important;
+  }
+
+  /* Footer Mobile */
+  footer .d-flex:not(.mar-b):not(.justify-c-s):not(.paw-info) {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .form-section {
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+
+  .form-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .form-row .form-group {
+    margin-bottom: 20px !important;
+  }
+
+  .contact-info {
+    gap: 25px !important;
+    width: 100% !important;
+  }
+
+  .join-1.d-flex.justify-c-s {
+    flex-direction: column !important;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .join.w-30 {
+    width: 100% !important;
+  }
+
+  .join-1 .d-flex.justify-c-s.w-30.pad-1 {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  .join-1 input {
+    width: 100% !important;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .paw-info.f-w {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+
+  .paw-1.w-30 {
+    width: 100% !important;
+  }
+
+  .right-section.w-60 {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 25px;
+    justify-content: flex-start !important;
+  }
+
+  .col {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .col h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .col p {
+    margin-bottom: 8px;
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .icons {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+  }
+
+  .justify-c-s.d-flex:last-child {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 15px;
+  }
+
+  /* Utility Classes Mobile Override */
+  .pad-1 {
+    padding: 15px 0 !important;
+  }
+
+  .g-40 {
+    gap: 20px !important;
+  }
+
+  .g-20 {
+    gap: 15px !important;
+  }
+
+  .mar-b {
+    margin-bottom: 15px !important;
+  }
+
+  /* Fix for search bar */
+  .search {
+    gap: 20px !important;
+  }
+
+  /* Fix for category buttons overflow */
+  .center {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+
+  .center::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .center::-webkit-scrollbar-thumb {
+    background: #152864;
+    border-radius: 2px;
+  }
+
+  /* Better spacing for mobile */
+  .shop, .services, .about-us, .blog {
+    padding: 30px 0 !important;
+  }
+
+  /* Team section improvements */
+  .icons-team {
+    justify-content: center !important;
+  }
+
+  .icons-team a i {
+    font-size: 18px !important;
+  }
+
+  /* Footer form improvements */
+  .checkbox-group {
+    margin-bottom: 20px !important;
+  }
+
+  .checkbox-label {
+    font-size: 13px !important;
+    line-height: 1.4;
+  }
+
+  /* Contact info better spacing */
+  .contact-header {
+    margin-bottom: 10px;
+  }
+
+  .contact-title {
+    font-size: 18px !important;
+  }
+
+  .contact-details {
+    font-size: 15px;
+  }
+}
+
+/* Extra small mobile devices (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  .container {
+    width: 98%;
+    padding: 0 8px;
+  }
+
+  .head {
+    font-size: 24px !important;
+  }
+
+  .relative input {
+    min-width: 250px !important;
+  }
+
+  .card-1 img {
+    max-width: 250px !important;
+  }
+
+  .img-box {
+    height: 150px !important;
+  }
+
+  .dog {
+    height: 200px !important;
+  }
+
+  .left-img i {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 30px !important;
+    left: calc(50% - 30px) !important;
+    top: calc(50% - 30px) !important;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+  .landing {
+    min-height: 100vh;
+  }
+
+  .head {
+    font-size: 32px !important;
+  }
+
+  .info {
+    justify-content: center;
+  }
+}
+
+/* Medium tablets */
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    width: 90%;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+
+  .card-1 {
+    justify-content: center !important;
+  }
+
+  .card-1 img {
+    width: calc(50% - 10px) !important;
+  }
+
+  .img-box {
+    width: calc(50% - 7.5px) !important;
+  }
+
+  .form-row {
+    flex-direction: column !important;
+  }
+
+  .paw-info {
+    flex-direction: column !important;
+  }
+
+  .right-section {
+    flex-wrap: wrap !important;
+    gap: 30px;
+  }
+
+  .col {
+    width: calc(50% - 15px) !important;
+  }
+}
+
