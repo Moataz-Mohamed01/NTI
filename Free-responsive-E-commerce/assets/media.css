@@ -1,11 +1,9 @@
-/* Mobile Styles for iPhone 14/13 (390px width) and similar devices */
-@media (max-width: 480px) {
+@media (max-width: 1080px) {
   .container {
-    width: 95%;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 0px;
   }
 
-  /* Header Mobile Navigation */
   .menu-toggle {
     display: block;
     background: none;
@@ -39,11 +37,11 @@
     display: none;
   }
 
-  /* Landing Section Mobile */
   .landing {
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    height: 38vh;
+    background-repeat: no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                 url("../assets/img/a5fcbde5258262f42e8d47435151dd5e6c7fc8ba.png");
   }
@@ -79,7 +77,6 @@
     width: 100% !important;
   }
 
-  /* Shop Section Mobile */
   .holder-1 {
     flex-direction: column !important;
     gap: 20px;
@@ -87,7 +84,6 @@
   }
 
   .relative input {
-    min-width: 280px;
     padding: 15px 40px 15px 15px;
   }
 
@@ -116,7 +112,7 @@
     max-width: 280px;
   }
 
-  /* Services Mobile */
+
   .services .w-90.d-flex.justify-c-s.align-c {
     flex-direction: column !important;
   }
@@ -140,7 +136,7 @@
     height: 300px !important;
   }
 
-  /* About Us Mobile */
+  
   .about-us .w-90.d-flex.justify-c-s.align-c {
     flex-direction: column !important;
   }
@@ -155,14 +151,18 @@
     order: 1;
     margin-bottom: 20px;
   }
+  .mask img {
+        margin-top: 14%;
+        margin-left: 32%;
+        width: 81%;}
 
   .mask-1 {
-    position: static !important;
-    width: 80% !important;
+    position: absolute !important;
+    width: 50% !important;
     margin: 20px auto !important;
-    display: block;
-    right: auto !important;
-    top: auto !important;
+    /* display: block; */
+    right: 42% !important;
+        top: 68% !important;
   }
 
   /* Team Section Mobile */
@@ -184,7 +184,6 @@
     margin-bottom: 15px;
   }
 
-  /* Blog Mobile */
   .blog .d-flex.justify-c-s {
     flex-direction: column !important;
   }
@@ -212,7 +211,6 @@
     top: calc(50% - 40px) !important;
   }
 
-  /* Footer Mobile */
   footer .d-flex:not(.mar-b):not(.justify-c-s):not(.paw-info) {
     flex-direction: column !important;
     gap: 30px;
@@ -309,7 +307,6 @@
     gap: 15px;
   }
 
-  /* Utility Classes Mobile Override */
   .pad-1 {
     padding: 15px 0 !important;
   }
@@ -326,12 +323,10 @@
     margin-bottom: 15px !important;
   }
 
-  /* Fix for search bar */
   .search {
     gap: 20px !important;
   }
 
-  /* Fix for category buttons overflow */
   .center {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -347,12 +342,10 @@
     border-radius: 2px;
   }
 
-  /* Better spacing for mobile */
   .shop, .services, .about-us, .blog {
     padding: 30px 0 !important;
   }
 
-  /* Team section improvements */
   .icons-team {
     justify-content: center !important;
   }
@@ -361,7 +354,6 @@
     font-size: 18px !important;
   }
 
-  /* Footer form improvements */
   .checkbox-group {
     margin-bottom: 20px !important;
   }
@@ -371,7 +363,6 @@
     line-height: 1.4;
   }
 
-  /* Contact info better spacing */
   .contact-header {
     margin-bottom: 10px;
   }
@@ -382,97 +373,6 @@
 
   .contact-details {
     font-size: 15px;
-  }
-}
-
-/* Extra small mobile devices (iPhone SE, etc.) */
-@media (max-width: 375px) {
-  .container {
-    width: 98%;
-    padding: 0 8px;
-  }
-
-  .head {
-    font-size: 24px !important;
-  }
-
-  .relative input {
-    min-width: 250px !important;
-  }
-
-  .card-1 img {
-    max-width: 250px !important;
-  }
-
-  .img-box {
-    height: 150px !important;
-  }
-
-  .dog {
-    height: 200px !important;
-  }
-
-  .left-img i {
-    width: 60px !important;
-    height: 60px !important;
-    font-size: 30px !important;
-    left: calc(50% - 30px) !important;
-    top: calc(50% - 30px) !important;
-  }
-}
-
-/* Landscape orientation for mobile */
-@media (max-width: 896px) and (orientation: landscape) {
-  .landing {
-    min-height: 100vh;
-  }
-
-  .head {
-    font-size: 32px !important;
-  }
-
-  .info {
-    justify-content: center;
-  }
-}
-
-/* Medium tablets */
-@media (max-width: 768px) and (min-width: 481px) {
-  .container {
-    width: 90%;
-  }
-
-  .w-50 {
-    width: 100% !important;
-  }
-
-  .card-1 {
-    justify-content: center !important;
-  }
-
-  .card-1 img {
-    width: calc(50% - 10px) !important;
-  }
-
-  .img-box {
-    width: calc(50% - 7.5px) !important;
-  }
-
-  .form-row {
-    flex-direction: column !important;
-  }
-
-  .paw-info {
-    flex-direction: column !important;
-  }
-
-  .right-section {
-    flex-wrap: wrap !important;
-    gap: 30px;
-  }
-
-  .col {
-    width: calc(50% - 15px) !important;
   }
 }
 
