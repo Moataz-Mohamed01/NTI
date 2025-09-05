@@ -1,0 +1,316 @@
+/* .home img {
+  height: 60vh;
+}
+
+.lal img {
+  height: 30vh;
+} */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar-brand .red-bar {
+  border-top: 5px solid #d32f2f;
+  display: inline-block;
+  width: 20px;
+  position: relative;
+  top: -10px;
+  margin-right: -5px;
+}
+
+.contact-info {
+  font-size: 1rem;
+}
+.search-bar {
+  max-width: 400px;
+}
+.icon-btn {
+  background: none;
+  border: none;
+}
+
+.nav-link:hover{ color: #d32f2f !important;}
+.nav-link
+ {
+  color: #000000 !important;
+  font-weight: 500;
+}
+
+.nav-link span{ color: #d32f2f;}
+.badge-notify {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #d32f2f;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+}
+.navbar .dropdown-toggle::after {
+  margin-left: 0.3em;
+}
+.shop-categories {
+  font-weight: 600;
+}
+.best-discount {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.recently-viewed {
+  text-align: right;
+}
+/* Offcanvas category links style */
+.offcanvas-body .categor {
+  color: #f90000;
+  /* text-decoration: none; */
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.offcanvas-body .categor:hover {
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
+  text-decoration: none;
+}
+
+/* Offcanvas category links style with hover effect */
+
+.categor a.mb-0.ms-2 {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+.categor:hover a.mb-0.ms-2 {
+  color: #d32f2f !important;
+  border-bottom: 2px solid #d32f2f;
+  text-decoration: none;
+}
+
+i:hover {
+  color: #d32f2f;
+}
+
+/* Carousel left side style */
+.carousel-left {
+  background: #d2b295;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 60px 40px;
+}
+.carousel-left h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.carousel-left .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.carousel-left .pa {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+.carousel-left .btn {
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 32px;
+  margin-top: 2rem;
+  box-shadow: none;
+  border: none;
+}
+.carousel-left .btn:hover {
+  background: #222;
+  color: #fff;
+}
+/* Right side images hover effect */
+.carousel-right-img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.carousel-right-img img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 100%;
+  display: block;
+}
+.carousel-right-img:hover img {
+  transform: scale(1.08);
+}
+.min i {
+  transition: color 0.3s ease;
+}
+
+.min i:hover,
+.min a:hover i {
+  color: gray !important;
+}
+.min .col-3 a i {
+  transition: color 0.2s;
+}
+
+.lol {
+  /* Add specific styles for .lol here if needed */
+  top: 83px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  /* Add your overlay styles here */
+}
+
+.card-cat:hover .lol,
+.card-cat:hover {
+  cursor: pointer;
+  color: #d32f2f;
+  display: block;
+}
+.card-cat:hover .overlay {
+  display: block !important;
+}
+.promo-img {
+  overflow: hidden; /* عشان يمنع الصورة من الخروج برة */
+  background-size: cover;
+  background-position: center;
+  transition: background-size 0.5s ease;
+}
+
+.promo-img:hover {
+  background-size: 110%; /* هنا بيكبر */
+}
+
+.card:hover .d-none {
+  display: flex !important;
+}
+.scalee {
+  overflow: hidden;
+}
+.scalee img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 100%;
+  display: block;
+}
+.scalee:hover img {
+  transform: scale(1.08);
+}
+.clothes  {
+
+background-color: rgb(186, 184, 184);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* background-size: cover; */
+  background-position: bottom;
+  /* position: relative; */
+  height: 80vh;
+  /* border-radius: 10px; */
+}
+
+.clothes {
+      overflow: hidden; /* يمنع أي Scroll جانبي */
+    }
+    .clothes img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .clothes .badge {
+      max-width: 80px;
+      max-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .option-img {
+      cursor: pointer;
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+    .option-img:hover {
+      transform: scale(1.15);
+      border: 2px solid black;
+    }
+    .search-tags a {
+      position: relative;
+      text-decoration: none;
+      color: #000;
+    }
+    .search-tags a:hover {
+      color: #000;
+    }
+    .search-tags a::before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      transition: width 0.3s ease;
+    }
+    .search-tags a:hover::before {
+      width: 100%;
+    }
+    .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none; /* يمنع التأثير إلا على الأزرار */
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 100px;
+  /* border-radius: 50%; */
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  pointer-events: auto; /* يرجع التفاعل */
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.container:hover .owl-carousel .owl-nav button.owl-prev,
+.container:hover .owl-carousel .owl-nav button.owl-next {
+  opacity: 1;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* عشان يبقى المرجع للـ absolute */
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scaleY(1.19);
+  z-index: 10; /* يخلي الكارت يطلع فوق */
+}
+.row {
+  position: relative;
+  overflow: visible !important;
+}

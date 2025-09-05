@@ -1,0 +1,125 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar-brand .red-bar {
+  border-top: 5px solid #d32f2f;
+  display: inline-block;
+  width: 20px;
+  position: relative;
+  top: -10px;
+  margin-right: -5px;
+}
+.contact-info {
+  font-size: 1rem;
+}
+.search-bar {
+  max-width: 400px;
+}
+.icon-btn {
+  background: none;
+  border: none;
+}
+.nav-link:hover {
+  color: #d32f2f !important;
+}
+.nav-link {
+  color: #000000 !important;
+  font-weight: 500;
+}
+.navbar-text {
+  color: #ff0000 !important;
+  font-weight: 500;
+}
+.nav-link span {
+  color: #d32f2f;
+}
+.badge-notify {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #d32f2f;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+}
+.navbar .dropdown-toggle::after {
+  margin-left: 0.3em;
+}
+.shop-categories {
+  font-weight: 600;
+}
+.offcanvas-body .categor {
+  color: #f90000;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.offcanvas-body .categor:hover {
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
+  text-decoration: none;
+}
+.categor a.mb-0.ms-2 {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+.categor:hover a.mb-0.ms-2 {
+  color: #d32f2f !important;
+  border-bottom: 2px solid #d32f2f;
+  text-decoration: none;
+}
+i:hover {
+  color: #d32f2f;
+}
+.o-v {
+  /* لو عايز سكرول */
+  max-height: 200px; 
+  overflow-y: auto; 
+}
+.o-v::-webkit-scrollbar {
+  width: 10px;
+  height: 100px;
+}
+.o-v::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.o-v::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+  /* min-height: 40px; */
+}
+.o-v::-webkit-scrollbar-thumb:hover {
+  background: #d32f2f;
+}
+.card:hover .action-buttons {
+  display: flex !important;
+}
+
+.action-buttons button {
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+}
+.nav-pills .nav-link {
+        border-radius: 0.5rem;
+        margin-right: 5px;
+      }
+      .nav-pills .nav-link.active {
+        background-color: #6c757d !important; /* رمادي أغمق للـ active */
+        color: #fff !important;
+      }
+
+
+
+      

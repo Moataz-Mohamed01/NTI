@@ -1,0 +1,2546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merto Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cat.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <span>M</span><span class="red-bar"></span><span>erto</span>
+          </a>
+
+          <div
+            class="d-flex flex-column flex-md-row align-items-center gap-3 flex-grow-1 justify-content-center"
+            style="max-width: 600px"
+          >
+            <div class="contact-info d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone fa-lg px-2 text-dark"></i>
+              <div>
+                <div>Contact us 24/7</div>
+                <div class="fw-bold">(+92) 3942 7879</div>
+              </div>
+            </div>
+
+            <form class="d-flex search-bar flex-grow-1" role="search">
+              <select class="form-select w-auto me-2">
+                <option><a href="categore.html">All Categories</a></option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Home</option>
+              </select>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search for products..."
+                aria-label="Search"
+              />
+              <button class="btn btn-dark" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="me-1">
+                  <img
+                    src="https://flagcdn.com/us.svg"
+                    width="20"
+                    alt="English"
+                  />
+                </span>
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button
+                class="btn btn-link dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                USD
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+              </ul>
+            </div>
+
+            <span class="navbar-text">
+              <i class="fa-regular fa-user"></i> <a href="contactus.html">Account</a>
+            </span>
+
+            <div class="position-relative">
+              <i class="fa-regular fa-heart fa-lg"></i>
+              <span class="badge-notify">0</span>
+            </div>
+
+            <div class="position-relative">
+              <i class="fa-solid fa-cart-shopping fa-lg"></i>
+              <span class="badge-notify">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Custom navigation bar -->
+    <div class="bg-body-tertiary border-bottom py-2 g-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions"
+            >
+              <i class="fa-solid fa-bars px-2"></i> shop by category
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel"
+            >
+              <div class="offcanvas-header bg-dark">
+                <div class="d-flex align-items-center text-white fs-3">
+                  <i class="fa-solid fa-bars px-2"></i>
+                  <p class="mb-0 ms-2">shop by category</p>
+                </div>
+              </div>
+
+              <div class="offcanvas-body">
+                <div
+                  class="categor d-flex align-items-center border-bottom pb-2 mb-3 fs-5"
+                >
+                  <a href=""
+                    ><i class="fa-solid fa-mobile-screen px-2 text-dark"></i
+                  ></a>
+                  <a href="categore.html" class="mb-0 ms-2">Electronics</a>
+                  <span class="flex-grow-1"></span>
+                  <a href=""
+                    ><i class="fa-solid fa-angle-right px-2 text-dark"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="categor d-flex align-items-center border-bottom pb-2 mb-3 fs-5"
+                >
+                  <a href=""
+                    ><i class="fa-solid fa-shirt px-2 text-dark"></i
+                  ></a>
+                  <a href="porduct.html" class="mb-0 ms-2">Fashion</a>
+                  <span class="flex-grow-1"></span>
+                  <a href=""
+                    ><i class="fa-solid fa-angle-right px-2 text-dark"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="categor d-flex align-items-center border-bottom pb-2 mb-3 fs-5"
+                >
+                  <a href=""
+                    ><i class="fa-solid fa-headphones px-2 text-dark"></i
+                  ></a>
+                  <a href="#" class="mb-0 ms-2">Tv,aduio-video</a>
+                  <span class="flex-grow-1"></span>
+                  <a href=""
+                    ><i class="fa-solid fa-angle-right px-2 text-dark"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="categor d-flex align-items-center border-bottom pb-2 mb-3 fs-5"
+                >
+                  <a href=""
+                    ><i class="fa-solid fa-camera px-2 text-dark"></i
+                  ></a>
+                  <a href="#" class="mb-0 ms-2">Games</a>
+                  <span class="flex-grow-1"></span>
+                  <a href=""
+                    ><i class="fa-solid fa-angle-right px-2 text-dark"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="categor d-flex align-items-center border-bottom pb-2 mb-3 fs-5"
+                >
+                  <a href=""
+                    ><i class="fa-solid fa-couch px-2 text-dark"></i
+                  ></a>
+                  <a href="#" class="mb-0 ms-2">Home</a>
+                  <span class="flex-grow-1"></span>
+                  <a href=""
+                    ><i class="fa-solid fa-angle-right px-2 text-dark"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="categor d-flex align-items-center border-bottom pb-2 mb-3 fs-5"
+                >
+                  <a href=""
+                    ><i class="fa-solid fa-robot px-2 text-dark"></i
+                  ></a>
+                  <a href="#" class="mb-0 ms-2">autopart</a>
+                  <span class="flex-grow-1"></span>
+                  <a href=""
+                    ><i class="fa-solid fa-angle-right px-2 text-dark"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col ms-5">
+            <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="../index.html">
+                  <span>Homepages</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Products</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="porduct.html">Product 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="porduct.html">Product 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item best-discount d-flex align-items-center">
+                <i class="fa fa-bolt px-2 text-dark"></i> Best Discount
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-auto text-end">
+            <a href="" class="text-dark">
+              <span
+                >Recently viewed
+                <i class="fa fa-chevron-down px-2 text-dark"></i
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light p-3">
+      <div class="container">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="categore.html">Category</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Product</li>
+        </ol>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <p class="fs-3 fw-bold">Shop</p>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active bg-body-secondary"
+            id="pills-autopart-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#autopart"
+            type="button"
+            role="tab"
+            aria-controls="autopart"
+            aria-selected="true"
+          >
+            Autopart
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-beauty-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#beauty"
+            type="button"
+            role="tab"
+            aria-controls="beauty"
+            aria-selected="false"
+          >
+            Beauty &amp; Health
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-electronics-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#electronics"
+            type="button"
+            role="tab"
+            aria-controls="electronics"
+            aria-selected="false"
+          >
+            Electronics
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-fashion-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#fashion"
+            type="button"
+            role="tab"
+            aria-controls="fashion"
+            aria-selected="false"
+          >
+            Fashion
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-game-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#game"
+            type="button"
+            role="tab"
+            aria-controls="game"
+            aria-selected="false"
+          >
+            Game Accessories
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="false"
+          >
+            Home &amp; Decore
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-laptop-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#laptop"
+            type="button"
+            role="tab"
+            aria-controls="laptop"
+            aria-selected="false"
+          >
+            Laptop &amp; Computer
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-phone-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#phone"
+            type="button"
+            role="tab"
+            aria-controls="phone"
+            aria-selected="false"
+          >
+            Phone &amp; Tablet
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link bg-body-secondary"
+            id="pills-tv-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#tv"
+            type="button"
+            role="tab"
+            aria-controls="tv"
+            aria-selected="false"
+          >
+            TV, Audio-Video
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="autopart"
+          role="tabpanel"
+          aria-labelledby="pills-autopart-tab"
+        >
+          <div class="row">
+            <div class="col-lg-3 col-sm-3 border-end mt-4">
+              <form action="">
+                <div class="container mt-5">
+                  <h4 class="mb-3">colors</h4>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-primary"
+                      type="checkbox"
+                      value=""
+                      id="blue"
+                    />
+                    <label class="form-check-label" for="blue">Blue</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-secondary"
+                      type="checkbox"
+                      value=""
+                      id="gray"
+                    />
+                    <label class="form-check-label" for="gray">Gray</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-success"
+                      type="checkbox"
+                      value=""
+                      id="green"
+                    />
+                    <label class="form-check-label" for="green">Green</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-dark"
+                      type="checkbox"
+                      value=""
+                      id="black"
+                    />
+                    <label class="form-check-label" for="black">Black</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-danger"
+                      type="checkbox"
+                      value=""
+                      id="red"
+                    />
+                    <label class="form-check-label" for="red">Red</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-warning"
+                      type="checkbox"
+                      value=""
+                      id="yellow"
+                    />
+                    <label class="form-check-label" for="yellow">Yellow</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-info"
+                      type="checkbox"
+                      value=""
+                      id="cyan"
+                    />
+                    <label class="form-check-label" for="cyan">Cyan</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input bg-white"
+                      type="checkbox"
+                      value=""
+                      id="white"
+                    />
+                    <label class="form-check-label" for="white">white</label>
+                  </div>
+
+                  <h4 class="mt-3 fw-semibold">brands</h4>
+
+                  <input
+                    type="search rounded-5 "
+                    class="form-control my-3"
+                    placeholder="search"
+                  />
+
+                  <div class="o-v">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="autopart"
+                      />
+                      <label class="form-check-label" for="autopart">
+                        Autopart <span class="text-black-50">(12)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="beauty-health"
+                      />
+                      <label class="form-check-label" for="beauty-health">
+                        Beauty & Health <span class="text-black-50">(7)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="electronics"
+                      />
+                      <label class="form-check-label" for="electronics">
+                        Electronics <span class="text-black-50">(15)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="fashion"
+                      />
+                      <label class="form-check-label" for="fashion">
+                        Fashion <span class="text-black-50">(22)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="game-accessories"
+                      />
+                      <label class="form-check-label" for="game-accessories">
+                        Game Accessories <span class="text-black-50">(5)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="home-decore"
+                      />
+                      <label class="form-check-label" for="home-decore">
+                        Home & Decore <span class="text-black-50">(8)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="laptop-computer"
+                      />
+                      <label class="form-check-label" for="laptop-computer">
+                        Laptop & Computer
+                        <span class="text-black-50">(11)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="smartphones"
+                      />
+                      <label class="form-check-label" for="smartphones">
+                        Smartphones <span class="text-black-50">(19)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="sports-outdoor"
+                      />
+                      <label class="form-check-label" for="sports-outdoor">
+                        Sports & Outdoor <span class="text-black-50">(9)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="toys-kids"
+                      />
+                      <label class="form-check-label" for="toys-kids">
+                        Toys & Kids <span class="text-black-50">(14)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="price">
+                    <h4 class="mt-3 fw-semibold">Price</h4>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="price-1"
+                      />
+                      <label
+                        class="form-check-label d-flex justify-content-between"
+                        for="price-1"
+                      >
+                        $50 <span class="text-black-50">(8)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="price-2"
+                      />
+                      <label
+                        class="form-check-label d-flex justify-content-between"
+                        for="price-2"
+                      >
+                        $100 <span class="text-black-50">(11)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="price-3"
+                      />
+                      <label
+                        class="form-check-label d-flex justify-content-between"
+                        for="price-3"
+                      >
+                        $150 <span class="text-black-50">(6)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="price-4"
+                      />
+                      <label
+                        class="form-check-label d-flex justify-content-between"
+                        for="price-4"
+                      >
+                        $200 <span class="text-black-50">(14)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="price-5"
+                      />
+                      <label
+                        class="form-check-label d-flex justify-content-between"
+                        for="price-5"
+                      >
+                        $250 <span class="text-black-50">(9)</span>
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="price-6"
+                      />
+                      <label
+                        class="form-check-label d-flex justify-content-between"
+                        for="price-6"
+                      >
+                        $300 <span class="text-black-50">(12)</span>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- Size -->
+                  <div class="mb-4">
+                    <h5 class="mb-2">Size</h5>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="us8"
+                      />
+                      <label class="form-check-label" for="us8"
+                        >US 8 <span class="text-black-50">(1)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="us9"
+                      />
+                      <label class="form-check-label" for="us9"
+                        >US 9 <span class="text-black-50">(1)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="us10"
+                      />
+                      <label class="form-check-label" for="us10"
+                        >US 10 <span class="text-black-50">(1)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="us11"
+                      />
+                      <label class="form-check-label" for="us11"
+                        >US 11 <span class="text-black-50">(1)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="us12"
+                      />
+                      <label class="form-check-label" for="us12"
+                        >US 12 <span class="text-black-50">(5)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="xs" />
+                      <label class="form-check-label" for="xs"
+                        >XS <span class="text-black-50">(7)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="s" />
+                      <label class="form-check-label" for="s"
+                        >S <span class="text-black-50">(10)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="m" />
+                      <label class="form-check-label" for="m"
+                        >M <span class="text-black-50">(10)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="l" />
+                      <label class="form-check-label" for="l"
+                        >L <span class="text-black-50">(10)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="xl" />
+                      <label class="form-check-label" for="xl"
+                        >XL <span class="text-black-50">(9)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="xxl"
+                      />
+                      <label class="form-check-label" for="xxl"
+                        >XXL <span class="text-black-50">(7)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="3xl"
+                      />
+                      <label class="form-check-label" for="3xl"
+                        >3XL <span class="text-black-50">(4)</span></label
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Storage Capacity -->
+                  <div class="mb-4">
+                    <h5 class="mb-2">Storage Capacity</h5>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="128gb"
+                      />
+                      <label class="form-check-label" for="128gb"
+                        >128 GB <span class="text-black-50">(1)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="64gb"
+                      />
+                      <label class="form-check-label" for="64gb"
+                        >64 GB <span class="text-black-50">(1)</span></label
+                      >
+                    </div>
+                  </div>
+
+                  <!-- Customer Rating -->
+                  <div class="mb-4">
+                    <h5 class="mb-2">Customer Rating</h5>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="rating5"
+                      />
+                      <label class="form-check-label" for="rating5"
+                        >★★★★★ <span class="text-black-50">(82)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="rating4"
+                      />
+                      <label class="form-check-label" for="rating4"
+                        >★★★★☆ <span class="text-black-50">(40)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="rating3"
+                      />
+                      <label class="form-check-label" for="rating3"
+                        >★★★☆☆ <span class="text-black-50">(4)</span></label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="rating2"
+                      />
+                      <label class="form-check-label" for="rating2"
+                        >★★☆☆☆ <span class="text-black-50">(4)</span></label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-9 col-sm-9">
+              <div class="row">
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card position-relative">
+                    <a href="porduct.html">
+                      <img
+                        src="../IMG/cat-1.jpg"
+                        class="card-img-top"
+                        alt="Product 1"
+                    /></a>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">IPHONE 18</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$999.5</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <a href="porduct.html"
+                      ><img
+                        src="../IMG/cat-19.jpg"
+                        class="card-img-top"
+                        alt="Product 1"
+                    /></a>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">TV</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$200</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <a href="porduct.html"
+                      ><img
+                        src="../IMG/cat-2.jpg"
+                        class="card-img-top"
+                        alt="Product 1"
+                    /></a>
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Chair</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$49.99</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <img
+                      src="../IMG/cat-4.jpg"
+                      class="card-img-top"
+                      alt="Product 1"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$49.99</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <img
+                      src="../IMG/cat-5.jpg"
+                      class="card-img-top"
+                      alt="Product 1"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$49.99</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <img
+                      src="../IMG/cat-6.jpg"
+                      class="card-img-top"
+                      alt="Product 1"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$49.99</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <img
+                      src="../IMG/cat-7.jpg"
+                      class="card-img-top"
+                      alt="Product 1"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$49.99</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    >
+                      <button
+                        class="btn btn-dark p-2 mb-2"
+                        title="Wishlist"
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="View Details
+  "
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="wishlist"
+                        class="btn btn-dark rounded-circle p-2 mb-2"
+                        title="View Details"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-dark mb-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        data-bs-title="compare"
+                        class="btn btn-dark rounded-circle p-2"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 position-relative">
+                    <img
+                      src="../IMG/cat-8.jpg"
+                      class="card-img-top"
+                      alt="Product 1"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text text-secondary flex-grow-1">
+                        This is a brief description of Product 1.
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <span class="text-danger fw-bold">$49.99</span>
+                        <a href="#" class="btn btn-dark">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div
+                      class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="beauty"
+          role="tabpanel"
+          aria-labelledby="pills-beauty-tab"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3 border-end mt-4">
+                <form action="">
+                  <div class="container mt-5">
+                    <h4 class="mb-3">colors</h4>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-primary"
+                        type="checkbox"
+                        value=""
+                        id="blue"
+                      />
+                      <label class="form-check-label" for="blue">Blue</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-secondary"
+                        type="checkbox"
+                        value=""
+                        id="gray"
+                      />
+                      <label class="form-check-label" for="gray">Gray</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-success"
+                        type="checkbox"
+                        value=""
+                        id="green"
+                      />
+                      <label class="form-check-label" for="green">Green</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-dark"
+                        type="checkbox"
+                        value=""
+                        id="black"
+                      />
+                      <label class="form-check-label" for="black">Black</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-danger"
+                        type="checkbox"
+                        value=""
+                        id="red"
+                      />
+                      <label class="form-check-label" for="red">Red</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-warning"
+                        type="checkbox"
+                        value=""
+                        id="yellow"
+                      />
+                      <label class="form-check-label" for="yellow"
+                        >Yellow</label
+                      >
+                    </div>
+
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-info"
+                        type="checkbox"
+                        value=""
+                        id="cyan"
+                      />
+                      <label class="form-check-label" for="cyan">Cyan</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input bg-white"
+                        type="checkbox"
+                        value=""
+                        id="white"
+                      />
+                      <label class="form-check-label" for="white">white</label>
+                    </div>
+
+                    <h4 class="mt-3 fw-semibold">brands</h4>
+
+                    <input
+                      type="search rounded-5 "
+                      class="form-control my-3"
+                      placeholder="search"
+                    />
+
+                    <div class="o-v">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="autopart"
+                        />
+                        <label class="form-check-label" for="autopart">
+                          Autopart <span class="text-black-50">(12)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="beauty-health"
+                        />
+                        <label class="form-check-label" for="beauty-health">
+                          Beauty & Health <span class="text-black-50">(7)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="electronics"
+                        />
+                        <label class="form-check-label" for="electronics">
+                          Electronics <span class="text-black-50">(15)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="fashion"
+                        />
+                        <label class="form-check-label" for="fashion">
+                          Fashion <span class="text-black-50">(22)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="game-accessories"
+                        />
+                        <label class="form-check-label" for="game-accessories">
+                          Game Accessories
+                          <span class="text-black-50">(5)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="home-decore"
+                        />
+                        <label class="form-check-label" for="home-decore">
+                          Home & Decore <span class="text-black-50">(8)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="laptop-computer"
+                        />
+                        <label class="form-check-label" for="laptop-computer">
+                          Laptop & Computer
+                          <span class="text-black-50">(11)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="smartphones"
+                        />
+                        <label class="form-check-label" for="smartphones">
+                          Smartphones <span class="text-black-50">(19)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="sports-outdoor"
+                        />
+                        <label class="form-check-label" for="sports-outdoor">
+                          Sports & Outdoor
+                          <span class="text-black-50">(9)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="toys-kids"
+                        />
+                        <label class="form-check-label" for="toys-kids">
+                          Toys & Kids <span class="text-black-50">(14)</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="price">
+                      <h4 class="mt-3 fw-semibold">Price</h4>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="price-1"
+                        />
+                        <label
+                          class="form-check-label d-flex justify-content-between"
+                          for="price-1"
+                        >
+                          $50 <span class="text-black-50">(8)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="price-2"
+                        />
+                        <label
+                          class="form-check-label d-flex justify-content-between"
+                          for="price-2"
+                        >
+                          $100 <span class="text-black-50">(11)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="price-3"
+                        />
+                        <label
+                          class="form-check-label d-flex justify-content-between"
+                          for="price-3"
+                        >
+                          $150 <span class="text-black-50">(6)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="price-4"
+                        />
+                        <label
+                          class="form-check-label d-flex justify-content-between"
+                          for="price-4"
+                        >
+                          $200 <span class="text-black-50">(14)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="price-5"
+                        />
+                        <label
+                          class="form-check-label d-flex justify-content-between"
+                          for="price-5"
+                        >
+                          $250 <span class="text-black-50">(9)</span>
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="price-6"
+                        />
+                        <label
+                          class="form-check-label d-flex justify-content-between"
+                          for="price-6"
+                        >
+                          $300 <span class="text-black-50">(12)</span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Size -->
+                    <div class="mb-4">
+                      <h5 class="mb-2">Size</h5>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="us8"
+                        />
+                        <label class="form-check-label" for="us8"
+                          >US 8 <span class="text-black-50">(1)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="us9"
+                        />
+                        <label class="form-check-label" for="us9"
+                          >US 9 <span class="text-black-50">(1)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="us10"
+                        />
+                        <label class="form-check-label" for="us10"
+                          >US 10 <span class="text-black-50">(1)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="us11"
+                        />
+                        <label class="form-check-label" for="us11"
+                          >US 11 <span class="text-black-50">(1)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="us12"
+                        />
+                        <label class="form-check-label" for="us12"
+                          >US 12 <span class="text-black-50">(5)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="xs"
+                        />
+                        <label class="form-check-label" for="xs"
+                          >XS <span class="text-black-50">(7)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="s"
+                        />
+                        <label class="form-check-label" for="s"
+                          >S <span class="text-black-50">(10)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="m"
+                        />
+                        <label class="form-check-label" for="m"
+                          >M <span class="text-black-50">(10)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="l"
+                        />
+                        <label class="form-check-label" for="l"
+                          >L <span class="text-black-50">(10)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="xl"
+                        />
+                        <label class="form-check-label" for="xl"
+                          >XL <span class="text-black-50">(9)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="xxl"
+                        />
+                        <label class="form-check-label" for="xxl"
+                          >XXL <span class="text-black-50">(7)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="3xl"
+                        />
+                        <label class="form-check-label" for="3xl"
+                          >3XL <span class="text-black-50">(4)</span></label
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Storage Capacity -->
+                    <div class="mb-4">
+                      <h5 class="mb-2">Storage Capacity</h5>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="128gb"
+                        />
+                        <label class="form-check-label" for="128gb"
+                          >128 GB <span class="text-black-50">(1)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="64gb"
+                        />
+                        <label class="form-check-label" for="64gb"
+                          >64 GB <span class="text-black-50">(1)</span></label
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Customer Rating -->
+                    <div class="mb-4">
+                      <h5 class="mb-2">Customer Rating</h5>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="rating5"
+                        />
+                        <label class="form-check-label" for="rating5"
+                          >★★★★★ <span class="text-black-50">(82)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="rating4"
+                        />
+                        <label class="form-check-label" for="rating4"
+                          >★★★★☆ <span class="text-black-50">(40)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="rating3"
+                        />
+                        <label class="form-check-label" for="rating3"
+                          >★★★☆☆ <span class="text-black-50">(4)</span></label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="rating2"
+                        />
+                        <label class="form-check-label" for="rating2"
+                          >★★☆☆☆ <span class="text-black-50">(4)</span></label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-lg-9 col-sm-9">
+                <div class="row">
+                  <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card position-relative">
+                      <img
+                        src="../IMG/cosmetic-1-300x300.jpg"
+                        class="card-img-top"
+                        alt="Luxury Lipstick"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Luxury Lipstick</h5>
+                        <p class="card-text text-secondary flex-grow-1">
+                          A premium lipstick with a smooth matte finish.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="text-danger fw-bold">$29.99</span>
+                          <a href="#" class="btn btn-dark">Add to Cart</a>
+                        </div>
+                      </div>
+                      <!-- Action Buttons -->
+                      <div
+                        class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                      >
+                        <button
+                          title="Wishlist"
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="wishlist"
+                        >
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="search"
+                          title="View Details"
+                        >
+                          <i class="fa fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="compare"
+                          title="Compare"
+                        >
+                          <i class="fa-solid fa-code-compare"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100 position-relative">
+                      <img
+                        src="../IMG/cosmetic-2-300x300.jpg"
+                        class="card-img-top"
+                        alt="Hydrating Face Cream"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Hydrating Face Cream</h5>
+                        <p class="card-text text-secondary flex-grow-1">
+                          Keeps your skin soft and moisturized all day.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="text-danger fw-bold">$39.99</span>
+                          <a href="#" class="btn btn-dark">Add to Cart</a>
+                        </div>
+                      </div>
+                      <!-- Action Buttons -->
+                      <div
+                        class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                      >
+                        <button
+                          title="Wishlist"
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="wishlist"
+                        >
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="search"
+                          title="View Details"
+                        >
+                          <i class="fa fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="compare"
+                          title="Compare"
+                        >
+                          <i class="fa-solid fa-code-compare"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100 position-relative">
+                      <img
+                        src="../IMG/cosmetic-cat-7.jpg"
+                        class="card-img-top"
+                        alt="Organic Shampoo"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Organic Shampoo</h5>
+                        <p class="card-text text-secondary flex-grow-1">
+                          Made with natural extracts for healthy hair.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="text-danger fw-bold">$24.50</span>
+                          <a href="#" class="btn btn-dark">Add to Cart</a>
+                        </div>
+                      </div>
+                      <!-- Action Buttons -->
+                      <div
+                        class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                      >
+                        <button
+                          title="Wishlist"
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="wishlist"
+                        >
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="search"
+                          title="View Details"
+                        >
+                          <i class="fa fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="compare"
+                          title="Compare"
+                        >
+                          <i class="fa-solid fa-code-compare"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100 position-relative">
+                      <img
+                        src="../IMG/cosmetics-33-300x300.jpg"
+                        class="card-img-top"
+                        alt="Eyeliner Pen"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Eyeliner Pen</h5>
+                        <p class="card-text text-secondary flex-grow-1">
+                          Waterproof eyeliner pen for sharp and bold looks.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="text-danger fw-bold">$14.99</span>
+                          <a href="#" class="btn btn-dark">Add to Cart</a>
+                        </div>
+                      </div>
+                      <!-- Action Buttons -->
+                      <div
+                        class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                      >
+                        <button
+                          title="Wishlist"
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="wishlist"
+                        >
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="search"
+                          title="View Details"
+                        >
+                          <i class="fa fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="compare"
+                          title="Compare"
+                        >
+                          <i class="fa-solid fa-code-compare"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100 position-relative">
+                      <img
+                        src="../IMG/cosmetics-34-300x300.jpg"
+                        class="card-img-top"
+                        alt="Perfume Spray"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Perfume Spray</h5>
+                        <p class="card-text text-secondary flex-grow-1">
+                          Long-lasting fragrance with a fresh scent.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="text-danger fw-bold">$59.00</span>
+                          <a href="#" class="btn btn-dark">Add to Cart</a>
+                        </div>
+                      </div>
+                      <!-- Action Buttons -->
+                      <div
+                        class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                      >
+                        <button
+                          title="Wishlist"
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="wishlist"
+                        >
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="search"
+                          title="View Details"
+                        >
+                          <i class="fa fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="compare"
+                          title="Compare"
+                        >
+                          <i class="fa-solid fa-code-compare"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-4 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100 position-relative">
+                      <img
+                        src="../IMG/cosmetics-40-1-300x300.jpg"
+                        class="card-img-top"
+                        alt="Nail Polish Set"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Nail Polish Set</h5>
+                        <p class="card-text text-secondary flex-grow-1">
+                          A set of vibrant nail polish colors.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <span class="text-danger fw-bold">$19.99</span>
+                          <a href="#" class="btn btn-dark">Add to Cart</a>
+                        </div>
+                      </div>
+                      <!-- Action Buttons -->
+                      <div
+                        class="action-buttons d-none flex-column position-absolute top-0 end-0 mt-3 me-3"
+                      >
+                        <button
+                          title="Wishlist"
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="wishlist"
+                        >
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="search"
+                          title="View Details"
+                        >
+                          <i class="fa fa-search"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-dark p-2 mb-2"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="compare"
+                          title="Compare"
+                        >
+                          <i class="fa-solid fa-code-compare"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="electronics"
+          role="tabpanel"
+          aria-labelledby="pills-electronics-tab"
+        >
+          Electronics content...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="fashion"
+          role="tabpanel"
+          aria-labelledby="pills-fashion-tab"
+        >
+          Fashion content...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="game"
+          role="tabpanel"
+          aria-labelledby="pills-game-tab"
+        >
+          Game Accessories content...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          Home &amp; Decore content...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="laptop"
+          role="tabpanel"
+          aria-labelledby="pills-laptop-tab"
+        >
+          Laptop &amp; Computer content...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="phone"
+          role="tabpanel"
+          aria-labelledby="pills-phone-tab"
+        >
+          Phone &amp; Tablet content...
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tv"
+          role="tabpanel"
+          aria-labelledby="pills-tv-tab"
+        >
+          TV, Audio-Video content...
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <!-- Brand and Contact Info -->
+        <div class="row mb-5">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h2 class="fw-bold mb-4"><i class="fas fa-gem me-2"></i> Merto</h2>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              <span class="text-light"
+                >29 SE 2nd Ave, Miami<br />Florida 33131, United States</span
+              >
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-envelope me-2"></i>
+              <span class="text-light">info@example.com</span>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-phone me-2"></i>
+              <h5 class="fw-bold d-inline">(+92) 3942 7879</h5>
+            </div>
+          </div>
+
+          <!-- Shopping Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-shopping-bag me-2"></i> SHOPPING
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Wishlist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Shop by Brand</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Offers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-danger"
+                  >Track order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Size Guide</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Information Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-info-circle me-2"></i> INFORMATION
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Track Order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Help</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Gift Cards</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Account Links -->
+          <div class="col-lg-2 col-md-6 col-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-user me-2"></i> ACCOUNT
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Cart</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >My account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >My orders</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light">Wishlist</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-light"
+                  >Affiliate Program</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-semibold mb-3">
+              <i class="fas fa-envelope-open-text me-2"></i> Let's keep in touch
+            </h5>
+            <div class="input-group mb-4">
+              <input
+                type="email"
+                class="form-control bg-dark text-white border-secondary"
+                placeholder="enter your email address"
+                style="border-right: none"
+              />
+              <button class="btn btn-light" type="button">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="d-flex">
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-light me-3 fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help Sections -->
+        <div class="row mb-4">
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-headset fs-2 mb-3"></i>
+              <h6 class="fw-semibold">
+                Didn't find what you were looking for?
+              </h6>
+              <a href="#" class="text-decoration-none text-light">Contact us</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-life-ring fs-2 mb-3"></i>
+              <h6 class="fw-semibold">How can we help you today?</h6>
+              <a href="#" class="text-decoration-none text-light"
+                >Help Center</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="bg-secondary bg-opacity-25 rounded p-4 text-center h-100"
+            >
+              <i class="fas fa-comments fs-2 mb-3"></i>
+              <h6 class="fw-semibold">We'd love to hear what you think!</h6>
+              <a href="#" class="text-decoration-none text-light"
+                >Give Feedback</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="row border-top pt-4">
+          <div class="col-md-6 mb-3">
+            <p class="text-muted mb-0">
+              Copyright © Merto. All Rights Reserved
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <!-- Payment Methods -->
+            <div class="d-flex flex-wrap justify-content-md-end">
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-paypal"></i> PayPal
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-apple-pay"></i> Apple Pay
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-visa"></i> Visa
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-discover"></i> Discover
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-jcb"></i> JCB
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fas fa-credit-card"></i> Pay
+              </span>
+              <span class="badge bg-light text-dark me-2 mb-2 p-2">
+                <i class="fab fa-cc-amex"></i> Amex
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <button
+        class="btn btn-danger position-fixed bottom-0 end-0 m-4 rounded-circle shadow"
+        style="width: 50px; height: 50px"
+        onclick="window.scrollTo(0,0)"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+ .navbar-brand span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar-brand .red-bar {
+  border-top: 5px solid #d32f2f;
+  display: inline-block;
+  width: 20px;
+  position: relative;
+  top: -10px;
+  margin-right: -5px;
+}
+.contact-info {
+  font-size: 1rem;
+}
+.search-bar {
+  max-width: 400px;
+}
+.icon-btn {
+  background: none;
+  border: none;
+}
+.nav-link:hover {
+  color: #d32f2f !important;
+}
+.nav-link {
+  color: #000000 !important;
+  font-weight: 500;
+}
+.navbar-text {
+  color: #ff0000 !important;
+  font-weight: 500;
+}
+.nav-link span {
+  color: #f30606;
+}
+.badge-notify {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #d32f2f;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+}
+.navbar .dropdown-toggle::after {
+  margin-left: 0.3em;
+}
+.shop-categories {
+  font-weight: 600;
+}
+.offcanvas-body .categor {
+  color: #f90000;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.offcanvas-body .categor:hover {
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
+  text-decoration: none;
+}
+.categor a.mb-0.ms-2 {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+.categor:hover a.mb-0.ms-2 {
+  color: #d32f2f !important;
+  border-bottom: 2px solid #d32f2f;
+  text-decoration: none;
+}
+i:hover {
+  color: #d32f2f;
+}
+
+.contact i { font-size: 16px;}
